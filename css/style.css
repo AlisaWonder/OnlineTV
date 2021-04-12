@@ -796,6 +796,7 @@ button:focus {
 @media (max-width: 991.98px) {
   .offer__title {
     font-size: 4.4rem;
+    margin-left: 30px;
   }
 }
 
@@ -842,6 +843,32 @@ footer {
   padding-bottom: 1.5rem;
 }
 
+@media (max-width: 767.98px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+}
+
 .footer-list {
   list-style: none;
   padding-left: 0;
@@ -857,4 +884,10 @@ footer {
   color: #c2c2c2;
   font-weight: 600;
   text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+  .footer-list {
+    margin-top: 3rem;
+  }
 }
