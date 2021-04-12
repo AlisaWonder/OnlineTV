@@ -221,28 +221,28 @@ button:focus {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 144rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: 0 auto;
 }
 
-@media (max-width: 1452px) {
+@media (max-width: 145.2rem) {
   .container {
-    max-width: 980px;
+    max-width: 98rem;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .container {
-    max-width: 755px;
+    max-width: 75.5rem;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 76.98rem) {
   .container {
     max-width: none;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 }
 
@@ -265,7 +265,7 @@ button:focus {
   min-height: 70px;
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 99.19rem) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -319,7 +319,7 @@ button:focus {
   display: none;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .menu__icon {
     z-index: 5;
     display: block;
@@ -417,12 +417,6 @@ button:focus {
   text-decoration: none;
 }
 
-@media (max-width: 767.98px) {
-  .section__h2 {
-    font-size: 2.1rem;
-  }
-}
-
 .section__btn {
   border: none;
   border-radius: 10rem;
@@ -459,7 +453,7 @@ button:focus {
   height: 100%;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .section-banner__image {
     position: relative;
     width: 100%;
@@ -489,7 +483,7 @@ button:focus {
 .banner__text {
   color: #c2c2c2;
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  line-height: 1.8;
   font-style: normal;
   font-weight: normal;
 }
@@ -600,28 +594,42 @@ button:focus {
   background-color: transparent;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .banner {
-    max-width: 56.2rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    max-width: 100%;
+    padding: 0;
     -webkit-box-shadow: 0px 0px 0px black;
             box-shadow: 0px 0px 0px black;
   }
-  .banner__title {
-    font-size: 4rem;
-  }
   .banner__text {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
+  }
+  .banner-info {
+    font-size: 4rem;
   }
   .banner-info__year {
     margin-right: 1.8rem;
   }
   .banner-info__time {
     margin-right: 4.13rem;
+    margin-left: 4.13rem;
+  }
+  .banner-info__age {
+    margin-left: 2.5rem;
+    padding: 2rem;
+  }
+  .banner-info__age::before {
+    width: 100%;
+    height: 4rem;
+    top: calc(50% - 2.1rem);
   }
   .banner-control {
     margin-top: 3.1rem;
+  }
+  .banner-control__btn {
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .banner-control__btn-main {
     margin-right: 3rem;
@@ -644,10 +652,10 @@ button:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 99.19rem) {
   .movies {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -673,7 +681,7 @@ button:focus {
     height: 30.9rem;
     -webkit-transition: 0.4s ease all;
     transition: 0.4s ease all;
-    border-radius: 2em;
+    border-radius: 2rem;
   }
   .movies__link:hover {
     -webkit-filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
@@ -771,7 +779,7 @@ button:focus {
   margin: 0.2rem 0 0 0;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .genres {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -806,7 +814,7 @@ button:focus {
           flex: 0 0 14%;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .actors-item {
     margin-right: 2rem;
   }
@@ -865,7 +873,7 @@ button:focus {
   border-radius: 0 2rem 2rem 0;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .marketing-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 90%;
@@ -882,7 +890,7 @@ button:focus {
   height: 34.1rem;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .marketing__link {
     height: 15.8rem;
   }
@@ -898,7 +906,7 @@ button:focus {
      object-fit: cover;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .marketing__img {
     width: 100%;
   }
@@ -927,7 +935,7 @@ button:focus {
   border-radius: 2rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 76.98rem) {
   .offer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -944,7 +952,7 @@ button:focus {
   line-height: 1;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .offer__title {
     font-size: 4.4rem;
     margin-left: 30px;
@@ -994,7 +1002,7 @@ footer {
   padding-bottom: 1.5rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 99.19rem) {
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1011,7 +1019,7 @@ footer {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 99.19rem) {
   .footer-item {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1037,7 +1045,7 @@ footer {
   text-decoration: none;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 76.98rem) {
   .footer-list {
     margin-top: 3rem;
   }
@@ -1047,7 +1055,7 @@ footer {
   </head>
   <body>
     <header>
-      <div class="header"><a href="#"><img src="images/logo.svg" alt="Logo"></a>
+      <div class="header"><a href="#"><img src="../src/images/logo.svg" alt="Logos"></a>
         <div class="header__menu">
           <div class="menu__icon"> <span> </span></div>
           <nav class="menu__body">
@@ -1072,7 +1080,7 @@ footer {
         </ul>
       </div>
     </header>
-    <section class="section-banner"> <img class="section-banner__image" src="images/hero.png" alt="Banner hero">
+    <section class="section-banner"> <img class="section-banner__image" src="../src/images/hero.png" alt="Banner hero">
       <div class="container">
         <div class="banner">
           <h1 class="banner__title">Zack Snyder's Justice League</h1>
@@ -1187,7 +1195,7 @@ footer {
     <section class="section">
       <div class="container">
         <div class="offer">
-          <h2 class="offer__title">Are You New Here ? Don’t&nbsp;wait, Register Now.  </h2>
+          <h2 class="offer__title">Are You New Here ? Don’t&nbsp;wait, Register Now.</h2>
           <button class="offer__btn">Register Now</button>
         </div>
       </div>

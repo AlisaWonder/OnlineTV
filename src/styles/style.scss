@@ -75,11 +75,11 @@ $white: #fff;
 $bg-gradient: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
 $bg-gradient-safe: rgba(50, 108, 255, 0.5);
 $black: rgb(0, 0, 0);
-$maxWidthContainer: 1440;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$maxWidthContainer: 144;
+$md1: $maxWidthContainer + 1.2;
+$md2: 99.19;
+$md3: 76.98;
+$md4: 47.98;
 
 html {
 	font-size: 10px;
@@ -88,7 +88,6 @@ body {
 	background: rgb(0, 0, 0);
 	color: #fff;
 	font-size: 16px;
-	//font-family: 'Marcellus SC', serif;
 	font-family: "Mulish", sans-serif;
 }
 
@@ -99,19 +98,19 @@ button {
 }
 
 .container {
-	max-width: $maxWidthContainer + px;
+	max-width: $maxWidthContainer + rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: 980px;
+	@media (max-width: $md1+rem) {
+		max-width: 98rem;
 	}
-	@media (max-width: $md2+px) {
-		max-width: 755px;
+	@media (max-width: $md2+rem) {
+		max-width: 75.5rem;
 	}
-	@media (max-width: $md3+px) {
+	@media (max-width: $md3+rem) {
 		max-width: none;
-		padding: 0 10px;
+		padding: 0 1rem;
 	}
 }
 
@@ -127,7 +126,7 @@ button {
 	padding-bottom: 1.5rem;
 	min-height: 70px;
 }
-@media (min-width: $md2+px) {
+@media (min-width: $md2+rem) {
 	.nav {
 		display: flex;
 		align-items: center;
@@ -183,7 +182,7 @@ button {
 	}
 }
 
-@media (max-width: $md2 + px) {
+@media (max-width: $md2 + rem) {
 	.menu {
 		&__icon {
 			z-index: 5;
@@ -270,9 +269,6 @@ button {
 			color: $white;
 			text-decoration: none;
 		}
-		@media (max-width: $md3 + px) {
-			font-size: 2.1rem;
-		}
 	}
 
 	&__btn {
@@ -305,7 +301,7 @@ button {
 		z-index: -1;
 		height: 100%;
 
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			position: relative;
 			width: 100%;
 			object-fit: cover;
@@ -331,7 +327,7 @@ button {
 	&__text {
 		color: #c2c2c2;
 		font-size: 1.8rem;
-		line-height: 2.8rem;
+		line-height: 1.8;
 		font-style: normal;
 		font-weight: normal;
 	}
@@ -339,6 +335,7 @@ button {
 	&-info {
 		font-weight: 800;
 		margin-bottom: 2.9rem;
+
 		&__year {
 			margin-right: 1.8rem;
 		}
@@ -432,38 +429,44 @@ button {
 	}
 }
 
-@media (max-width: $md2+px) {
+@media (max-width: $md2+rem) {
 	.banner {
-		max-width: 56.2rem;
-		padding-top: 0rem;
-		padding-bottom: 0rem;
+		max-width: 100%;
+		padding: 0;
 		box-shadow: 0px 0px 0px $black;
-		&__title {
-			font-size: 4rem;
-		}
 
 		&__text {
-			font-size: 1.6rem;
+			font-size: 2.4rem;
 		}
 
 		&-info {
+			font-size: 4rem;
 			&__year {
 				margin-right: 1.8rem;
 			}
-
-			&__age {
-			}
-
-			&__rating {
-			}
-
 			&__time {
 				margin-right: 4.13rem;
+				margin-left: 4.13rem;
+			}
+
+			&__age {
+				margin-left: 2.5rem;
+				padding: 2rem;
+				&::before {
+					width: 100%;
+					height: 4rem;
+					top: calc(50% - 2.1rem);
+				}
 			}
 		}
 
 		&-control {
 			margin-top: 3.1rem;
+			&__btn {
+				font-size: 3rem;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
 
 			&__btn-main {
 				margin-right: 3rem;
@@ -483,16 +486,10 @@ button {
 	overflow: auto;
 	&-item {
 		flex: 0 0 30%;
-		margin-right: 15px;
-	}
-
-	&__link {
-	}
-
-	&__img {
+		margin-right: 1.5rem;
 	}
 }
-@media (min-width: $md2+px) {
+@media (min-width: $md2+rem) {
 	.movies {
 		display: flex;
 		align-items: center;
@@ -509,7 +506,7 @@ button {
 			width: 100%;
 			height: 30.9rem;
 			transition: 0.4s ease all;
-			border-radius: 2em;
+			border-radius: 2rem;
 			&:hover {
 				filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
 			}
@@ -587,18 +584,13 @@ button {
 	}
 }
 
-@media (max-width: $md2+px) {
+@media (max-width: $md2+rem) {
 	.genres {
 		flex-wrap: nowrap;
 		overflow: auto;
 		&-item {
 			flex: 0 0 70%;
 			margin-right: 2rem;
-		}
-
-		&__image {
-		}
-		&__title {
 		}
 	}
 }
@@ -612,7 +604,7 @@ button {
 	overflow: auto;
 	&-item {
 		flex: 0 0 14%;
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			margin-right: 2rem;
 		}
 	}
@@ -659,7 +651,7 @@ button {
 			}
 		}
 
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			flex: 0 0 90%;
 			margin-right: 10px;
 		}
@@ -671,7 +663,7 @@ button {
 		position: relative;
 		width: 100%;
 		height: 34.1rem;
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			height: 15.8rem;
 		}
 	}
@@ -683,7 +675,7 @@ button {
 		transform: translate(-50%, -50%);
 		object-fit: cover;
 
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			width: 100%;
 		}
 	}
@@ -703,7 +695,7 @@ button {
 	margin-bottom: 12.1rem;
 	box-sizing: border-box;
 	border-radius: 2rem;
-	@media (max-width: $md3+px) {
+	@media (max-width: $md3+rem) {
 		flex-direction: column;
 	}
 
@@ -713,7 +705,7 @@ button {
 		max-width: 80rem;
 		margin: 0;
 		line-height: 1;
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			font-size: 4.4rem;
 			margin-left: 30px;
 		}
@@ -753,7 +745,7 @@ footer {
 	padding-right: 1.5rem;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
-	@media (max-width: $md3+px) {
+	@media (max-width: $md2+rem) {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -762,7 +754,7 @@ footer {
 	}
 
 	&-item {
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2+rem) {
 			align-items: center;
 			padding: 1rem;
 		}
@@ -781,7 +773,7 @@ footer {
 			font-weight: 600;
 			text-decoration: none;
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3+rem) {
 			margin-top: 3rem;
 		}
 	}
