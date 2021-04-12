@@ -806,6 +806,12 @@ button:focus {
           flex: 0 0 14%;
 }
 
+@media (max-width: 991.98px) {
+  .actors-item {
+    margin-right: 2rem;
+  }
+}
+
 .actors__link {
   display: block;
   overflow: hidden;
@@ -841,6 +847,7 @@ button:focus {
           justify-content: space-between;
   text-align: center;
   margin-top: 2.1rem;
+  overflow: auto;
 }
 
 .marketing-item {
@@ -858,12 +865,27 @@ button:focus {
   border-radius: 0 2rem 2rem 0;
 }
 
+@media (max-width: 991.98px) {
+  .marketing-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    margin-right: 10px;
+  }
+}
+
 .marketing__link {
   display: block;
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 34.1rem;
+}
+
+@media (max-width: 991.98px) {
+  .marketing__link {
+    height: 15.8rem;
+  }
 }
 
 .marketing__img {
@@ -874,6 +896,12 @@ button:focus {
           transform: translate(-50%, -50%);
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .marketing__img {
+    width: 100%;
+  }
 }
 
 .offer {
@@ -896,6 +924,16 @@ button:focus {
   margin-bottom: 12.1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .offer__title {
@@ -904,6 +942,12 @@ button:focus {
   max-width: 80rem;
   margin: 0;
   line-height: 1;
+}
+
+@media (max-width: 991.98px) {
+  .offer__title {
+    font-size: 4.4rem;
+  }
 }
 
 .offer__btn {
@@ -995,7 +1039,7 @@ footer {
         </ul>
       </div>
     </header>
-    <section class="section-banner"> <img class="section-banner__image" src="../src/images/Hero.png" alt="Banner hero">
+    <section class="section-banner"> <img class="section-banner__image" src="../src/images/hero.png" alt="Banner hero">
       <div class="container">
         <div class="banner">
           <h1 class="banner__title">Zack Snyder's Justice League</h1>

@@ -612,6 +612,9 @@ button {
 	overflow: auto;
 	&-item {
 		flex: 0 0 14%;
+		@media (max-width: $md2+px) {
+			margin-right: 2rem;
+		}
 	}
 
 	&__link {
@@ -641,6 +644,7 @@ button {
 	justify-content: space-between;
 	text-align: center;
 	margin-top: 2.1rem;
+	overflow: auto;
 	&-item {
 		flex: 0 0 50%;
 		border-radius: 2rem;
@@ -654,6 +658,11 @@ button {
 				border-radius: 0 2rem 2rem 0;
 			}
 		}
+
+		@media (max-width: $md2+px) {
+			flex: 0 0 90%;
+			margin-right: 10px;
+		}
 	}
 
 	&__link {
@@ -662,6 +671,9 @@ button {
 		position: relative;
 		width: 100%;
 		height: 34.1rem;
+		@media (max-width: $md2+px) {
+			height: 15.8rem;
+		}
 	}
 
 	&__img {
@@ -670,6 +682,10 @@ button {
 		top: 50%;
 		transform: translate(-50%, -50%);
 		object-fit: cover;
+
+		@media (max-width: $md2+px) {
+			width: 100%;
+		}
 	}
 }
 
@@ -686,6 +702,10 @@ button {
 	margin-top: 2rem;
 	margin-bottom: 12.1rem;
 	box-sizing: border-box;
+	border-radius: 2rem;
+	@media (max-width: $md3+px) {
+		flex-direction: column;
+	}
 
 	&__title {
 		font-size: 6.4rem;
@@ -693,6 +713,9 @@ button {
 		max-width: 80rem;
 		margin: 0;
 		line-height: 1;
+		@media (max-width: $md2+px) {
+			font-size: 4.4rem;
+		}
 	}
 
 	&__btn {
